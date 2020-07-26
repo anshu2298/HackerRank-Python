@@ -1,0 +1,27 @@
+
+def merge_the_tools(string, k):
+  l=list(string)
+  s1=[]
+  i=0
+  size=len(string)
+  for i in range(0,len(l),k):
+    if i+k<=size:
+        s1.append(l[i:i+k])
+    else:
+        s1.append(l[i::])
+  b=[]
+  for i in s1:
+    b.append(list(dict.fromkey(i)))
+
+  for i in b:
+    print(''.join(i))
+
+
+  
+  
+
+
+
+  
+
+if __name__ == '__main__':

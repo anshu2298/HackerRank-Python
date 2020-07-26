@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import math
+AB=int(input())
+BC=int(input())
+AC= ((AB**2)+(BC**2))**0.5
+b=AC/2
+C=math.asin(AB/AC)
+c=pow(pow(b,2) + pow(BC,2) - 2*(b)*BC* math.cos(C),0.5)
+B=math.asin((math.sin(C)*b)/c)
+B=(B*180)/3.14
+print(f"{round(B)}° ")

@@ -1,0 +1,20 @@
+def minion_game(s):
+  c=0     #kein=vowel,Struat=consonent
+  v=0
+  for i in range(len(s)):
+    if s[i] in 'AEIOU':
+      v+=(len(s))-i
+    else:
+      c+=(len(s))-i
+  if c>v:
+    print(f'Stuart {c}')
+  elif v>c:
+    print(f'Kevin {v}')       
+  else:
+    print('Draw')
+
+
+
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)The Minion F

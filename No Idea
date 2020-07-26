@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=list(map(int,input().split()))
+l =list(map(int,input().split()))
+likes=set(map(int,input().split()))
+dislikes=set(map(int,input().split()))
+print(sum((i in likes)-(i in dislikes) for i in l))
+
+
+ 
